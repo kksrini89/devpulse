@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui";
+import { Card, CardHeader, CardTitle } from "@/components/ui";
 import { Settings, User, Bell, Palette } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Settings",
+  description: "Manage your preferences and account settings",
+};
 
 /**
  * Settings Page (Server Component)

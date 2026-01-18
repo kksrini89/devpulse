@@ -1,9 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout";
 import { Button } from "@/components/ui";
 import { Plus } from "lucide-react";
 import { ProjectCard } from "@/features/projects/components";
 import { getProjects } from "@/features/projects/queries";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Manage and track all your development projects",
+};
 
 /**
  * Projects List Page (Server Component)

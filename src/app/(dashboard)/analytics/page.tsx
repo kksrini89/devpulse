@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout";
 import { Skeleton, Card, CardContent, CardHeader } from "@/components/ui";
 import {
@@ -15,6 +16,11 @@ import {
 import { TIME_PERIODS, type TimePeriod } from "@/lib/constants";
 import { formatNumber, formatDuration, formatDate } from "@/lib/utils";
 import { GitCommit, Clock, Calendar, Rocket } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Analytics",
+  description: "View your development activity and productivity metrics",
+};
 
 /**
  * Analytics Page (Server Component)
